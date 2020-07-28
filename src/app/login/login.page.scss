@@ -1,0 +1,25 @@
+ion-item{
+  --background: #3880ff;
+  --color: #fff;
+}
+ion-button{
+  --background: #062f77;
+}
+ion-title{
+  background: #061226;
+  color: #fff;
+  font-size: 40px;
+}
+
+ion-item.ion-invalid.ion-touched{
+ background: var(--ion-color-danger) !important;
+}
+
+ion-item.ion-valid.ion-touched{
+  background: var(--ion-color-success) !important;
+}
+
+ion-spinner {
+  display: block;
+  margin: auto;
+}

@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-title>
+        Quotes
+        <ion-button color="danger" (click)="onLogOut()" class="ion-float-right">Q</ion-button>
+        <ion-button (click)="onAddQuote()" class="ion-float-right">Add Quote</ion-button>
+
+    </ion-title>
+
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col size-lg="6" offset-lg="3">
+                <ion-card *ngFor="let quote of quotes" (click)="onOpenQuote(quote.id)">
+                    <ion-card-title class="ion-float-end, ion-margin"># {{quote.keyWord}}</ion-card-title>
+                    <ion-card-content>{{quote.content}}</ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

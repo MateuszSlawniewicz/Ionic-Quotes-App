@@ -1,0 +1,12 @@
+{
+  "name": "ionic-proxy",
+  "integrations": {},
+  "type": "angular",
+  "proxies": [
+    {
+      "path": "/login",
+      "method": "POST",
+      "proxyUrl": "http://localhost:9000/login"
+    }
+  ]
+}
